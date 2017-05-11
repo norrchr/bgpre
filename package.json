@@ -1,0 +1,19 @@
+{
+  "name": "bgpre",
+  "version": "0.7.1",
+  "description": "BGP.re web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Norris",
+  "license": "ISC",
+  "dependencies": {
+    "birdbgp": "^0.1.4",
+    "body-parser": "^1.15.2",
+    "cidr-regex": "^1.0.6",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "jade-bootstrap": "^1.0.9"
+  }
+}

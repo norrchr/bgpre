@@ -1,0 +1,12 @@
+span= "/* " + objects.length + " " +  ip + " */"
+br
+for o in objects
+ if o.prefix == ""
+  - o.prefix = pfx
+ else
+  - var pfx = o.prefix
+ span= o.prefix + " [" + o.aspath + "] " + o.name
+ br
+
+//span= "Prefix: " + o.prefix + " Status: " + o.status.join('') + " OriginAS: " + o.originas + " ASpath: " + o.aspath + " BGP Communities: " + o.comm.join(' ')
+

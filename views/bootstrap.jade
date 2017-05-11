@@ -1,0 +1,52 @@
+extends _bootstrap
+append styles
+	// Custom styles for this template
+	link(href='/css/app.css', rel='stylesheet')
+block body
+	// Fixed navbar
+	nav.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='#') BGP.re
+			#navbar.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li.active
+						a(href='/') Home
+					li
+						a(href='/about') About
+					li
+						a(href='/contact') Contact
+					li.dropdown
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+							| Dropdown 
+							span.caret
+						ul.dropdown-menu(role='menu')
+							li
+								a(href='#') Action
+							li
+								a(href='#') Another action
+							li
+								a(href='#') Something else here
+							li.divider
+							li.dropdown-header Nav header
+							li
+								a(href='#') Separated link
+							li
+								a(href='#') One more separated link
+
+	.container
+		.page-header
+			h1= error || "Search for an ASN/IP resource:"
+		p.lead
+			form(name="resource", method="post" action="/")
+				input(type="text", name="resource" value="Enter a ASN/IP resource")
+				input(type="submit", value="search")
+
+	footer.footer
+		.container
+			p.text-muted BGP.re (2016) web-app built using NodeJs, Express, Jade-Bootstrap. Backend using customized bird bgp daemon.

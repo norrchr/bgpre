@@ -1,0 +1,16 @@
+html
+ head
+  title= title
+  link(href='/css/app.css')
+ body
+  div.header
+   p This is a header!
+  div.main
+   if error != undefined
+    p.error= error
+   div.content
+    form(name="resource", method="post" action="/")
+     input(type="text", name="resource" value="Enter a ASN/IP resource")
+     input(type="submit", value="search")
+  div.footer
+   p This is a footer!

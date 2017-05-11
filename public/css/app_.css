@@ -1,0 +1,51 @@
+body {
+	background: #ffffff;
+	color: #676767;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+div .header {
+	width: 100%;
+	height: 10%;
+	min-height: 10%;
+}
+div .footer {
+	width: 100%;
+	height: 10%;
+	min-height: 10%;
+}
+
+div .main {
+	width: 100%;
+	height: 80%;
+	min-height: 80%;
+}
+
+
+p .error {
+	color: red;
+	font-size: 20px;
+}
+
+div .content {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+	
+
+ 
+
+
